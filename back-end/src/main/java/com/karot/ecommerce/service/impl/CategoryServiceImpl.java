@@ -50,7 +50,7 @@ public class CategoryServiceImpl implements CategoryService {
         categoryRepo.save(category);
         return Response.builder()
                 .status(200)
-                .message("Category saved successfully")
+                .message("Category updated successfully")
                 .build();
     }
 
