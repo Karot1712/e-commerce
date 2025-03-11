@@ -57,6 +57,7 @@ public class OrderItemServiceImpl implements OrderItemService {
             return  orderItem;
         }).collect(Collectors.toList());
 
+
         //calculate total price
         BigDecimal totalPrice = orderRequest.getTotalPrice() != null && orderRequest.getTotalPrice().compareTo(BigDecimal.ZERO) > 0
                 ? orderRequest.getTotalPrice()

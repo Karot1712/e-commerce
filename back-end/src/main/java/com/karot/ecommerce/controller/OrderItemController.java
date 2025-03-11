@@ -22,11 +22,12 @@ public class OrderItemController {
     private final OrderItemService orderItemService;
 
     @PostMapping("/place-order")
-    public ResponseEntity<Response> placeOrder(@RequestParam OrderRequest orderRequest){
+    public ResponseEntity<Response> placeOrder(@RequestBody OrderRequest orderRequest){
         return ResponseEntity.ok(orderItemService.placeOrder(orderRequest));
     }
 
     @PutMapping("/update/{orderItemId}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     public ResponseEntity<Response> updateOrderItemStatus(@PathVariable Long orderItemId, @RequestParam String status){
         return ResponseEntity.ok(orderItemService.updateOrderItemStatus(orderItemId,status));
     }

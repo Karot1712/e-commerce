@@ -38,6 +38,7 @@ public class CategoryController {
         return ResponseEntity.ok(categoryService.getAllCategory());
     }
 
+
     @GetMapping("/get-by-id/{categoryId}")
     public ResponseEntity<Response> getCategoryById(@PathVariable Long categoryId){
         return ResponseEntity.ok(categoryService.getCategoryById(categoryId));
