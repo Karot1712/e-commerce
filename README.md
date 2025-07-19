@@ -1,45 +1,41 @@
-# 🛒 E-Commerce Backend API
+#  E-Commerce Web Application (Fullstack)
 
-A backend system for an e-commerce web application, built with Java Spring Boot. This project handles user authentication, product listing, cart management, order placement, review system, and more.
+A complete e-commerce web application including both frontend and backend.
 
-## 📌 1. Features
-
--  User authentication (JWT)
--  Role-based authorization (ADMIN / USER)
--  Product & category management
--  Shopping cart and checkout
--  Order placement with multiple items
--  Review and rating system
--  Address & payment method handling
--  PDF invoice generation (optional)
--  Cloudinary for image storage
--  Admin-only product/category control
+-  **Backend**: Java Spring Boot (JWT Auth, Order APIs, Product CRUD, etc.)
+-  **Frontend**: React (Product listing, cart, login, checkout)
 
 ---
 
-##  2. Tech Stack
+##   Features
 
-- **Backend:** Java 17, Spring Boot, Spring Security, JPA
-- **Database:** MySQL
-- **Libraries:** Lombok, MapStruct, JWT, iTextPDF, Cloudinary SDK
-- **Build Tool:** Maven
-- **Documentation & Testing:** Postman, Swagger (if configured)
+###  Backend (Spring Boot)
+- User registration & login (JWT-based)
+- Role-based access control (ADMIN / USER)
+- Product & category management
+- Cart & checkout flow
+- Order placement with multiple items and sauces
+- Review system
+- Image upload with Cloudinary
+
+###  Frontend (React)
+- User-friendly product listing
+- Product detail page
+- Shopping cart with quantity control
+- Secure login/register
+- Order summary & checkout
+
 
 ---
 
-## 3. ERD – Entity Relationship Diagram
+## ⚙️ Tech Stack
 
-![ERD](https://raw.githubusercontent.com/Karot1712/e-commerce/main/docs/erd.png)
+| Layer     | Technology              |
+|-----------|--------------------------|
+| Frontend  | React, Axios, TailwindCSS |
+| Backend   | Java 17, Spring Boot, Spring Security |
+| Database  | MySQL                    |
+| Others    | JWT, Cloudinary, iTextPDF, Postman, Maven |
 
-> ERD includes: User, Product, Category, Order, OrderItem, Review, Payment, Address.
 
----
 
-## 🚀 4. Getting Started
-
-### 4.1 Clone and Build
-
-```bash
-git clone https://github.com/Karot1712/e-commerce.git
-cd e-commerce
-./mvnw clean install
