@@ -35,7 +35,7 @@ A complete e-commerce web application including both frontend and backend.
 | Frontend  | React, Axios, TailwindCSS |
 | Backend   | Java 17, Spring Boot, Spring Security |
 | Database  | MySQL                    |
-| Others    | JWT, Cloudinary, iTextPDF, Postman, Maven |
+| Others    | JWT, Cloudinary, Postman, Maven |
 
 
 
